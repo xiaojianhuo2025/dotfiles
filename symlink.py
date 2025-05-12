@@ -35,6 +35,9 @@ if __name__ == "__main__":
         dst = home.joinpath(".config", "ghostty")
         backup_replace(repo.joinpath("ghostty"), dst)
 
+    # if command_exists("zsh"):
+    #     dst = home
+    #     backup_replace(repo.joinpath("zsh", 
 
     # 因为python未识别导致脚本未运行，没有输出看上去就像正常执行
     # 加一句print，看到就代表脚本已运行

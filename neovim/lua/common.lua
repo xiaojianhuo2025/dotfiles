@@ -1,15 +1,16 @@
 -- 缩进只用空格，宽度统一为4
 
+-- vim.opt和vim.o等同
 -- 按下tab键时使用空格字符填充缩进
-vim.opt.expandtab = true
+vim.o.expandtab = true
 -- 设置制表字符（\t）的显示宽度，显示只用tab缩进的代码时使用
-vim.opt.tabstop = 4
+vim.o.tabstop = 4
 -- 设置敲击tab或退格键时缩进值，跟随tabstop
-vim.opt.softtabstop = 4
+vim.o.softtabstop = 4
 -- 设置normal模式时使用大于号小于号键增加减少缩进时的缩进值，跟随tabstop
-vim.opt.shiftwidth = 4
+vim.o.shiftwidth = 4
 -- 自动跟随上一行的缩进
-vim.opt.autoindent = true
+vim.o.autoindent = true
 
 -- 滚动余量
 local scrolloff = 2
