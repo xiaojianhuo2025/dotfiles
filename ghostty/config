@@ -1,4 +1,10 @@
 window-padding-balance = true
 window-height = 30
 window-width = 90
-theme = seoulbones_light
+theme = catppuccin-latte
+
+font-size = 10.5 
+font-family = Fira Code
+font-family = Source Han Sans CN
+
+fullscreen = true

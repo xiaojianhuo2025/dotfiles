@@ -35,7 +35,10 @@ if __name__ == "__main__":
         dst = home.joinpath(".config", "ghostty")
         backup_replace(repo.joinpath("ghostty"), dst)
 
-    # if command_exists("zsh"):
+    if command_exists("fish"):
+        dst = home.joinpath(".config", "fish")
+        backup_replace(repo.joinpath("fish"), dst)
+
     #     dst = home
     #     backup_replace(repo.joinpath("zsh", 
 
