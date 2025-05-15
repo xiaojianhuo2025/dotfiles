@@ -1,10 +1,12 @@
 window-padding-balance = true
-window-height = 30
-window-width = 90
+window-height = 35
+window-width = 100
 theme = catppuccin-latte
 
 font-size = 10.5 
 font-family = Fira Code
 font-family = Source Han Sans CN
 
-fullscreen = true
+selection-invert-fg-bg = true
+cursor-invert-fg-bg = true
+mouse-hide-while-typing = true
