@@ -3,7 +3,7 @@ if status is-interactive
 end
 
 set -gx http_proxy http://127.0.0.1:55555
-set -gx https_proxy = $http_proxy
+set -gx https_proxy $http_proxy
 
 set -gx GCM_CREDENTIAL_STORE cache
 
