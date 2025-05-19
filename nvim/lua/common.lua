@@ -23,9 +23,13 @@ vim.o.colorcolumn = "80"
 vim.o.number = true
 -- vim.o.relativenumber = true
 
+-- 主题相关设置
 vim.o.termguicolors = true
 vim.o.background = 'light'
 vim.cmd.colorscheme 'everforest'
+
+-- 突出显示光标所在行
+vim.o.cursorline = true
 
 local builtin = require('telescope.builtin')
 vim.keymap.set('n', '<leader>ff', builtin.find_files, { desc = 'Telescope find files' })
