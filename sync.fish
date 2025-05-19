@@ -24,7 +24,7 @@ function link --argument-names src dst
 end
 
 if test "$_" != source
-    set folders "nvim" "ghostty"
+    set folders "nvim" "ghostty" "fish"
     for folder in $folders
         dotconfig $folder
     end
