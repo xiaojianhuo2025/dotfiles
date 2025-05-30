@@ -16,5 +16,8 @@ return {
     {
         -- 动态colorcolumn，未超出时不显示
         'Bekaboo/deadcolumn.nvim'
-    }
+    },
+    {
+         'neovim/nvim-lspconfig'
+    },
 }

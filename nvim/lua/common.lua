@@ -29,6 +29,9 @@ vim.o.termguicolors = true
 vim.o.background = 'light'
 vim.cmd.colorscheme 'everforest'
 
+-- 使用系统剪贴板
+vim.opt.clipboard:append { 'unnamed', 'unnamedplus' }
+
 -- 突出显示光标所在行
 vim.o.cursorline = true
 

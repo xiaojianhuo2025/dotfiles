@@ -1,7 +1,7 @@
 window-padding-balance = true
 window-height = 35
 window-width = 100
-theme = catppuccin-latte
+theme = dark:catppuccin-frappe,light:catppuccin-latte
 
 font-size = 10.5 
 font-family = Fira Code
