@@ -3,7 +3,7 @@ window-height = 35
 window-width = 100
 theme = dark:catppuccin-frappe,light:catppuccin-latte
 
-font-size = 10.5 
+font-size = 10
 font-family = Fira Code
 font-family = Source Han Sans CN
 
