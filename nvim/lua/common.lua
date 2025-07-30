@@ -26,8 +26,8 @@ vim.o.number = true
 
 -- 主题相关设置
 vim.o.termguicolors = true
-vim.o.background = 'light'
-vim.cmd.colorscheme 'everforest'
+vim.o.background = 'dark'
+vim.cmd.colorscheme 'flow'
 
 -- 使用系统剪贴板
 vim.opt.clipboard:append { 'unnamed', 'unnamedplus' }
