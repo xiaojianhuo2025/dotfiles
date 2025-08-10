@@ -1,7 +1,9 @@
 window-padding-balance = true
 window-height = 35
 window-width = 100
-theme = dark:catppuccin-frappe,light:catppuccin-latte
+window-theme = auto
+
+theme = Raycast_Light
 
 font-size = 10
 font-family = Fira Code
@@ -10,3 +12,6 @@ font-family = Source Han Sans CN
 selection-invert-fg-bg = true
 cursor-invert-fg-bg = true
 mouse-hide-while-typing = true
+
+initial-command = fish
+shell-integration = fish

@@ -1,3 +1,5 @@
-require('plugin_manager')
+-- require('plugin_manager')
 require('common')
-require('lsp')
+-- require('lsp')
+require('plugins.zenbones')
+require('plugins.bg')

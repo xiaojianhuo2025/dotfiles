@@ -24,10 +24,10 @@ vim.o.colorcolumn = "80"
 vim.o.number = true
 -- vim.o.relativenumber = true
 
--- 主题相关设置
-vim.o.termguicolors = true
-vim.o.background = 'dark'
-vim.cmd.colorscheme 'flow'
+-- -- 主题相关设置
+-- vim.o.termguicolors = true
+-- vim.o.background = 'dark'
+-- vim.cmd.colorscheme 'flow'
 
 -- 使用系统剪贴板
 vim.opt.clipboard:append { 'unnamed', 'unnamedplus' }
@@ -35,8 +35,8 @@ vim.opt.clipboard:append { 'unnamed', 'unnamedplus' }
 -- 突出显示光标所在行
 vim.o.cursorline = true
 
-local builtin = require('telescope.builtin')
-vim.keymap.set('n', '<leader>ff', builtin.find_files, { desc = 'Telescope find files' })
-vim.keymap.set('n', '<leader>fg', builtin.live_grep, { desc = 'Telescope live grep' })
-vim.keymap.set('n', '<leader>fb', builtin.buffers, { desc = 'Telescope buffers' })
-vim.keymap.set('n', '<leader>fh', builtin.help_tags, { desc = 'Telescope help tags' })
+-- local builtin = require('telescope.builtin')
+-- vim.keymap.set('n', '<leader>ff', builtin.find_files, { desc = 'Telescope find files' })
+-- vim.keymap.set('n', '<leader>fg', builtin.live_grep, { desc = 'Telescope live grep' })
+-- vim.keymap.set('n', '<leader>fb', builtin.buffers, { desc = 'Telescope buffers' })
+-- vim.keymap.set('n', '<leader>fh', builtin.help_tags, { desc = 'Telescope help tags' })
