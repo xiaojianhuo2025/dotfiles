@@ -1,3 +1,7 @@
+-- 设置空格为leader键
+vim.g.mapleader = ' '
+
+
 -- 缩进只用空格，宽度统一为4
 local indentval = 4
 
@@ -20,7 +24,6 @@ vim.opt.scrolloff = scrolloff
 -- 垂直方向滚动余量
 vim.opt.sidescrolloff = scrolloff
 
-vim.o.colorcolumn = "80"
 vim.o.number = true
 -- vim.o.relativenumber = true
 
@@ -34,9 +37,3 @@ vim.opt.clipboard:append { 'unnamed', 'unnamedplus' }
 
 -- 突出显示光标所在行
 vim.o.cursorline = true
-
--- local builtin = require('telescope.builtin')
--- vim.keymap.set('n', '<leader>ff', builtin.find_files, { desc = 'Telescope find files' })
--- vim.keymap.set('n', '<leader>fg', builtin.live_grep, { desc = 'Telescope live grep' })
--- vim.keymap.set('n', '<leader>fb', builtin.buffers, { desc = 'Telescope buffers' })
--- vim.keymap.set('n', '<leader>fh', builtin.help_tags, { desc = 'Telescope help tags' })

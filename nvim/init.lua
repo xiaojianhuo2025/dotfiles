@@ -1,5 +1,17 @@
--- require('plugin_manager')
 require('common')
--- require('lsp')
+-- 主题
 require('plugins.zenbones')
-require('plugins.bg')
+-- 模糊查找
+require('plugins.telescope')
+-- 自动切换输入法
+require('plugins.im-select')
+
+-- 动态文本长度标尺
+require('plugins.deadcolumn')
+
+-- 状态栏
+require('plugins.lualine')
+
+if jit.os ~= 'Windows' then
+    require('plugins.bg')
+end
