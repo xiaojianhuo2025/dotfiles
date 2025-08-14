@@ -37,3 +37,5 @@ vim.opt.clipboard:append { 'unnamed', 'unnamedplus' }
 
 -- 突出显示光标所在行
 vim.o.cursorline = true
+
+vim.keymap.set('n', '<leader>rn', ':restart<CR>')
