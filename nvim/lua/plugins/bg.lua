@@ -1,1 +1,1 @@
-vim.pack.add({'https://github.com/typicode/bg.nvim'})
+vim.pack.add({ 'https://github.com/typicode/bg.nvim' })

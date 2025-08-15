@@ -1,3 +1,3 @@
-vim.pack.add({'https://github.com/keaising/im-select.nvim'})
+vim.pack.add({ 'https://github.com/keaising/im-select.nvim' })
 
 require('im_select').setup({})

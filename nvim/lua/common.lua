@@ -1,9 +1,10 @@
 -- 设置空格为leader键
 vim.g.mapleader = ' '
 
-
 -- 缩进只用空格，宽度统一为4
 local indentval = 4
+
+vim.o.signcolumn = 'yes'
 
 -- vim.opt和vim.o等同
 -- 按下tab键时使用空格字符填充缩进
@@ -18,7 +19,7 @@ vim.o.shiftwidth = indentval
 vim.o.autoindent = true
 
 -- 滚动余量
-local scrolloff = 2
+local scrolloff = 1
 -- 水平方向滚动余量
 vim.opt.scrolloff = scrolloff
 -- 垂直方向滚动余量
@@ -27,13 +28,8 @@ vim.opt.sidescrolloff = scrolloff
 vim.o.number = true
 -- vim.o.relativenumber = true
 
--- -- 主题相关设置
--- vim.o.termguicolors = true
--- vim.o.background = 'dark'
--- vim.cmd.colorscheme 'flow'
-
 -- 使用系统剪贴板
-vim.opt.clipboard:append { 'unnamed', 'unnamedplus' }
+vim.opt.clipboard:append({ 'unnamed', 'unnamedplus' })
 
 -- 突出显示光标所在行
 vim.o.cursorline = true

@@ -1,6 +1,6 @@
-vim.pack.add({'https://github.com/Bekaboo/deadcolumn.nvim'})
+vim.pack.add({ 'https://github.com/Bekaboo/deadcolumn.nvim' })
 
-vim.o.colorcolumn = "80"
+vim.o.colorcolumn = '80'
 
 require('deadcolumn').setup({
     -- Dynamically adjusts the colorcolumn behavior based on editing
@@ -12,33 +12,33 @@ require('deadcolumn').setup({
     --    the colorcolumn with warning color, else conceal the
     --    colorcolumn entirely
     scope = function()
-      if vim.fn.mode():find('^[iRss\x13]') ~= nil then
-        return vim.fn.strdisplaywidth(vim.fn.getline('.'))
-      end
+        if vim.fn.mode():find('^[iRss\x13]') ~= nil then
+            return vim.fn.strdisplaywidth(vim.fn.getline('.'))
+        end
 
-      -- Don't show in read-only buffers
-      if not vim.bo.ma or vim.bo.ro then
-        return 0
-      end
+        -- Don't show in read-only buffers
+        if not vim.bo.ma or vim.bo.ro then
+            return 0
+        end
 
-      -- Find maximum length within visible range
-      local max_len = math.max(
-        unpack(
-          vim.tbl_map(
-            vim.fn.strdisplaywidth,
-            vim.api.nvim_buf_get_lines(
-              0,
-              vim.fn.line('w0') - 1,
-              vim.fn.line('w$'),
-              false
+        -- Find maximum length within visible range
+        local max_len = math.max(
+            unpack(
+                vim.tbl_map(
+                    vim.fn.strdisplaywidth,
+                    vim.api.nvim_buf_get_lines(
+                        0,
+                        vim.fn.line('w0') - 1,
+                        vim.fn.line('w$'),
+                        false
+                    )
+                )
             )
-          )
         )
-      )
 
-      if max_len >= cc_resolve(vim.wo.cc) then
-        return max_len
-      end
-      return 0
+        if max_len >= cc_resolve(vim.wo.cc) then
+            return max_len
+        end
+        return 0
     end,
 })
