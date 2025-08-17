@@ -3,9 +3,7 @@
 # 直接将仓库内文件（夹）链接到~/.config中
 # 例如将仓库内folder链接到~/.config/folder
 function dotconfig --argument-names src
-    set repo (realpath (path dirname (status --current-filename)))
-    # echo $repo
-    link $repo/$src $HOME/.config/$src
+    repolink $src $HOME/.config/$src
 end
 
 # 创建符号链接，如果目标存在则按照时间戳重命名
@@ -23,9 +21,19 @@ function link --argument-names src dst
     ln -s $src $dst
 end
 
+function repolink --argument-names src dst
+    set repo (realpath (path dirname (status --current-filename)))
+    link $repo/$src $dst
+end
+
 if test "$_" != source
     set folders "nvim" "ghostty" "fish" "mpv"
     for folder in $folders
         dotconfig $folder
+    end
+
+    if [ $(uname) = 'Linux' ]
+        # echo 'keyd link'
+        repolink 'keyd.conf' '/etc/keyd/default.conf'
     end
 end
