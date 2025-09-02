@@ -27,13 +27,15 @@ function repolink --argument-names src dst
 end
 
 if test "$_" != source
-    set folders "nvim" "ghostty" "fish" "mpv"
+    set folders "nvim" "neovide" "ghostty" "fish" "mpv"
     for folder in $folders
         dotconfig $folder
     end
 
     if [ $(uname) = 'Linux' ]
+        # 替换/etc里的文件需要root权限
         # echo 'keyd link'
         repolink 'keyd.conf' '/etc/keyd/default.conf'
+        # repolink 'keyd-overrides.quirks' '/etc/libinput/local-overrides.quirks'
     end
 end
