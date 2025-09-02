@@ -3,7 +3,7 @@ window-height = 35
 window-width = 100
 window-theme = auto
 
-theme = Raycast_Light
+theme = Chalkboard
 
 font-size = 10
 font-family = Fira Code
@@ -12,6 +12,7 @@ font-family = Source Han Sans CN
 selection-invert-fg-bg = true
 cursor-invert-fg-bg = true
 mouse-hide-while-typing = true
+adjust-cursor-thickness = 20%
 
 initial-command = fish
 shell-integration = fish
