@@ -26,7 +26,7 @@ vim.opt.scrolloff = scrolloff
 vim.opt.sidescrolloff = scrolloff
 
 vim.o.number = true
--- vim.o.relativenumber = true
+vim.o.relativenumber = true
 
 -- 使用系统剪贴板
 vim.opt.clipboard:append({ 'unnamed', 'unnamedplus' })
