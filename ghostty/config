@@ -1,9 +1,12 @@
 window-padding-balance = true
-window-height = 35
-window-width = 100
+window-height = 40
+window-width = 120
 window-theme = auto
 
 theme = Raycast_Light
+
+background-opacity = 0.7
+background-blur = true
 
 font-size = 10
 font-family = Fira Code
