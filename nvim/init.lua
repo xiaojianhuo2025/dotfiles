@@ -2,7 +2,6 @@
 require('common')
 -- 外观
 require('appearance')
-
 -- 必备
 require('essential')
 
@@ -10,8 +9,5 @@ require('essential')
 -- require('neovide')
 -- 模糊查找
 require('plugins.telescope')
--- 状态栏
--- require('plugins.lualine')
 -- 语言服务器
 -- require('plugins.lspconfig')
-
