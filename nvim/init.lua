@@ -1,3 +1,5 @@
+-- 键位
+require('keymaps')
 -- 基本设置
 require('common')
 -- 外观

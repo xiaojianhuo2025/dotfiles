@@ -4,3 +4,5 @@ require('plugins.im-select')
 require('plugins.deadcolumn')
 -- 文件操作
 require('plugins.oil')
+-- 保存时去掉多余空格
+require('plugins.trim')

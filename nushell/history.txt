@@ -1,0 +1,181 @@
+vim dotfiles/wezterm/wezterm.lua
+vim dotfiles/sync.fish
+./dotfiles/sync.fish
+vim dotfiles/vim/vimrc
+nvim
+vim dotfiles/vim/vimrc
+ls ~/.vim/autoload/
+vim dotfiles/vim/vimrc
+git status
+cd dotfiles/
+git status
+cd ..
+ls .vim
+ls
+./dotfiles/sync.fish
+ls
+ls -a
+vim dotfiles/sync.fish
+ls .config/vim
+ls .vim/autoload/
+vim
+vim dotfiles/vim/vimrc
+cd dotfiles/
+git status
+vim $nu.env-path
+vim $nu.config-path
+paru
+config nu
+$env.config.buffer_editor = "vim"
+config nu
+./sync.fish
+vim nushell/
+vim dotfiles/nushell/
+help config env
+config env
+vim dotfiles/nushell/config.nu
+config env
+config nu
+ls
+vim dotfiles/vim/vimrc
+vim dotfiles/wezterm/wezterm.lua
+nvim
+vim
+vim dotfiles/wezterm/wezterm.lua
+vim
+vim dotfiles/wezterm/wezterm.lua
+ls
+vim dotfiles/wezterm/wezterm.lua
+vim dotfiles/vim/vimrc
+vim
+nvim
+paru sarasa
+paru maple mono
+paru sarasa
+vim dotfiles/vim/vimrc
+paru sarasa gothic
+paru maple mono
+cd dotfiles/
+vim dotfiles/vim/vimrc
+cd ..
+vim dotfiles/vim/vimrc
+vim
+paru -R ghostty
+gvim
+vim dotfiles/vim/vimrc
+vim
+vim dotfiles/vim/vimrc
+vim
+paru pcsx2
+paru yuzu
+paru nintendo switch
+paru -R ryujinx
+paru nintendo switch
+vim
+vim dotfiles/vim/vimrc
+vim dotfiles/wezterm/wezterm.lua
+ls
+paru sarasa gothic
+config nu
+vim dotfiles/vim/vimrc
+cd dotfiles/
+ls
+mv vim/vimrc ./vimrc
+ls
+rm -rf vim/
+ls
+touch sync.nu
+ls
+vim sync.nu
+vim sync.fish
+./sync.fish
+vim sync.fish
+./sync.fish
+vim sync.fish
+./sync.fish
+vim
+ls
+cd ..
+ls
+ls -a
+vim .vimrc
+vim dotfiles/vimrc
+./dotfiles/sync.fish
+rm ~/.vimrc
+./dotfiles/sync.fish
+vim
+ls
+vim .vimrc
+ls -a
+rm ~/.config/vim
+ls
+vim
+vim dotfiles/sync.fish
+./dotfiles/sync.fish
+nvim dotfiles/sync.fish
+vim dotfiles/sync.fish
+./dotfiles/sync.fish
+rm .vimrc
+./dotfiles/sync.fish
+vim
+vim .vimrc
+nvim
+cd dotfiles/
+ls
+touch gvimrc
+vim sync.fish
+ls
+./sync.fish
+cd ..
+vim
+vim ~/.vimrc
+vim
+paru ungoogled
+paru
+paru ghostty
+ls
+cd .config/
+ls
+rm ghostty
+ls
+vim
+vim ~/.vimrc
+ls -a
+ls ~/.config/
+vim
+vim $MYVIMRC
+vim
+vim /home/yibo/.vimrc
+rm ~/.vim
+rm -r ~/.vim
+ls
+vim 
+vim .vimrc
+ls /home/yibo/.vim/plugged/
+ls /home/yibo/.vim/autoload/
+vim
+vim .vimrc
+vim
+rm -r ~/.vim
+ls
+vim
+vim .gvimrc
+rm .gvimrc
+ls
+vim
+rm -r ~/.vim
+vim
+vim .vimrc
+paru
+paru ventoy
+paru -S ventoy-bin
+ventoy
+ls /dev/
+ventoy
+ls /dev/
+ventoy 
+ventoy -I -g /dev/sda
+sudo ventoy -I -g /dev/sda
+cd dotfiles/
+ls
+git status

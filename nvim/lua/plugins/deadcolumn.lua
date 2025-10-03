@@ -1,6 +1,6 @@
 vim.pack.add({ 'https://github.com/Bekaboo/deadcolumn.nvim' })
 
-vim.o.colorcolumn = '80'
+vim.opt.colorcolumn = '80'
 
 require('deadcolumn').setup({
     -- Dynamically adjusts the colorcolumn behavior based on editing
