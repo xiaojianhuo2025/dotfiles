@@ -179,3 +179,4 @@ sudo ventoy -I -g /dev/sda
 cd dotfiles/
 ls
 git status
+ls

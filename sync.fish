@@ -9,7 +9,7 @@ end
 # 创建符号链接，如果目标存在则按照时间戳重命名
 # src：源头文件（夹），dst：符号链接位置
 function link --argument-names src dst
-    echo $src $dst
+    # echo $src $dst
     if test -e $dst
         set --local timestamp (date +"%Y-%m-%d_%H:%M:%S")
         # echo $timestamp
@@ -34,10 +34,10 @@ if test "$_" != source
 
     repolink "vimrc" "$HOME/.vimrc"
     repolink "gvimrc" "$HOME/.gvimrc"
-    # if [ $(uname) = 'Linux' ]
-    #     # 替换/etc里的文件需要root权限
-    #     # echo 'keyd link'
-    #     repolink 'keyd.conf' '/etc/keyd/default.conf'
-    #     # repolink 'keyd-overrides.quirks' '/etc/libinput/local-overrides.quirks'
-    # end
+    if [ $(uname) = 'Linux' ]
+        # 替换/etc里的文件需要root权限
+        # echo 'keyd link'
+        repolink 'keyd.conf' '/etc/keyd/default.conf'
+        repolink 'keyd-overrides.quirks' '/etc/libinput/local-overrides.quirks'
+    end
 end
