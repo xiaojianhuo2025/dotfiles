@@ -32,12 +32,12 @@ if test "$_" != source
         dotconfig $folder
     end
 
-    repolink "vimrc" "$HOME/.vimrc"
-    repolink "gvimrc" "$HOME/.gvimrc"
-    if [ $(uname) = 'Linux' ]
-        # 替换/etc里的文件需要root权限
-        # echo 'keyd link'
-        repolink 'keyd.conf' '/etc/keyd/default.conf'
-        repolink 'keyd-overrides.quirks' '/etc/libinput/local-overrides.quirks'
-    end
+    # repolink "vimrc" "$HOME/.vimrc"
+    # repolink "gvimrc" "$HOME/.gvimrc"
+    # if [ $(uname) = 'Linux' ]
+    #     # 替换/etc里的文件需要root权限
+    #     # echo 'keyd link'
+    #     repolink 'keyd.conf' '/etc/keyd/default.conf'
+    #     repolink 'keyd-overrides.quirks' '/etc/libinput/local-overrides.quirks'
+    # end
 end
