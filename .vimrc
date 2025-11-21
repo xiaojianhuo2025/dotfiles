@@ -1,1 +1,0 @@
-/home/yibo/.vimrc
