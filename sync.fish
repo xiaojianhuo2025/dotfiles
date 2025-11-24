@@ -27,11 +27,12 @@ function repolink --argument-names src dst
 end
 
 if test "$_" != source
-    set folders "nvim" "ghostty" "fish" "mpv" "wezterm" "nushell"
+    set folders "nvim" "ghostty" "fish" "mpv" # "wezterm" "nushell"
     for folder in $folders
         dotconfig $folder
     end
 
+    # 暂不维护
     # repolink "vimrc" "$HOME/.vimrc"
     # repolink "gvimrc" "$HOME/.gvimrc"
     # if [ $(uname) = 'Linux' ]
