@@ -1,5 +1,6 @@
 return {
     {
+        -- colorscheme
         'Verf/deepwhite.nvim',
         lazy = false,
         priority = 1000,
@@ -7,8 +8,13 @@ return {
             vim.cmd [[colorscheme deepwhite]]
         end,
     },
-    { "typicode/bg.nvim", lazy = false },
+    { 
+        -- sync terminal boarder color with nvim bg
+        "typicode/bg.nvim", 
+        lazy = false 
+    },
     {
+        -- statusline
         'nvim-lualine/lualine.nvim',
         -- dependencies = { 'nvim-tree/nvim-web-devicons' }
         opts = {
@@ -18,5 +24,41 @@ return {
                 section_separators = '',
             }
         }
-    }
+    },
+    {
+        -- show column line on insert mode
+        'Bekaboo/deadcolumn.nvim',
+        opts = {
+            scope = function()
+                if vim.fn.mode():find('^[iRss\x13]') ~= nil then
+                    return vim.fn.strdisplaywidth(vim.fn.getline('.'))
+                end
+        
+                -- Don't show in read-only buffers
+                if not vim.bo.ma or vim.bo.ro then
+                    return 0
+                end
+        
+                -- Find maximum length within visible range
+                local max_len = math.max(
+                    unpack(
+                        vim.tbl_map(
+                            vim.fn.strdisplaywidth,
+                            vim.api.nvim_buf_get_lines(
+                                0,
+                                vim.fn.line('w0') - 1,
+                                vim.fn.line('w$'),
+                                false
+                            )
+                        )
+                    )
+                )
+        
+                if max_len >= cc_resolve(vim.wo.cc) then
+                    return max_len
+                end
+                return 0
+            end,
+        },
+    },
 }

@@ -21,17 +21,20 @@ vim.o.autoindent = true
 -- 滚动余量
 local scrolloff = 2
 -- 水平方向滚动余量
-vim.opt.scrolloff = scrolloff
+vim.o.scrolloff = scrolloff
 -- 垂直方向滚动余量
-vim.opt.sidescrolloff = scrolloff
+vim.o.sidescrolloff = scrolloff
 
 -- 显示行号
 vim.o.number = true
 -- 显示相对行号（便于数字jk跳转）
 vim.o.relativenumber = true
 
+-- 单行长度警戒线
+vim.o.colorcolumn = '80'
+
 -- 使用系统剪贴板
-vim.opt.clipboard:append({ 'unnamed', 'unnamedplus' })
+vim.o.clipboard = 'unnamedplus'
 
 -- 突出显示光标所在行
 vim.o.cursorline = true
@@ -39,7 +42,7 @@ vim.o.cursorline = true
 vim.cmd.filetype('plugin indent on')
 
 -- undo file
-vim.opt.undodir = os.getenv('HOME') .. '/.vim/undodir'
-vim.opt.undofile = true
+vim.o.undodir = os.getenv('HOME') .. '/.vim/undodir'
+vim.o.undofile = true
 
 vim.o.winborder = 'single'
