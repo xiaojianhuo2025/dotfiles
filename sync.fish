@@ -35,10 +35,14 @@ if test "$_" != source
     # 暂不维护
     # repolink "vimrc" "$HOME/.vimrc"
     # repolink "gvimrc" "$HOME/.gvimrc"
-    # if [ $(uname) = 'Linux' ]
-    #     # 替换/etc里的文件需要root权限
+    if [ $(uname) = 'Linux' ]
+        # 替换/etc里的文件需要root权限
+        # 禁止ungoogled-chromium打开bitbrowser协议，
+        # 使抖音网页版不再弹窗询问是否打开xdg-open
+        set blocklist '/etc/chromium/policies/managed/blocklist.json'
+        repolink 'blockpolicies.json' $blocklist
     #     # echo 'keyd link'
     #     repolink 'keyd.conf' '/etc/keyd/default.conf'
     #     repolink 'keyd-overrides.quirks' '/etc/libinput/local-overrides.quirks'
-    # end
+    end
 end
