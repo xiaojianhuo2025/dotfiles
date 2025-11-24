@@ -31,8 +31,11 @@ require("lazy").setup({
   -- install = { colorscheme = { "habamax" } },
   -- automatically check for plugin updates
   checker = { enabled = true },
+  -- disable luarocks
   rocks = { enabled = false },
+  -- set colorscheme for Lazy initial UI
   colorscheme = { "deepwhite" },
+  -- use border because the background colors of menu and editor are same
   ui = {
       title = 'NeoVim Plugin Manager',
       border = 'single',
