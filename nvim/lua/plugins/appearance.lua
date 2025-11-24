@@ -8,21 +8,24 @@ return {
             vim.cmd [[colorscheme deepwhite]]
         end,
     },
-    { 
+    {
         -- sync terminal boarder color with nvim bg
-        "typicode/bg.nvim", 
-        lazy = false 
+        "typicode/bg.nvim",
+        lazy = false
     },
     {
         -- statusline
         'nvim-lualine/lualine.nvim',
         -- dependencies = { 'nvim-tree/nvim-web-devicons' }
         opts = {
-    	options = {
+    	    options = {
                 icons_enabled = false,
                 component_separators = '',
                 section_separators = '',
-            }
+            },
+            sections = {
+                lualine_y = {},
+            },
         }
     },
     {
@@ -33,12 +36,12 @@ return {
                 if vim.fn.mode():find('^[iRss\x13]') ~= nil then
                     return vim.fn.strdisplaywidth(vim.fn.getline('.'))
                 end
-        
+
                 -- Don't show in read-only buffers
                 if not vim.bo.ma or vim.bo.ro then
                     return 0
                 end
-        
+
                 -- Find maximum length within visible range
                 local max_len = math.max(
                     unpack(
@@ -53,7 +56,7 @@ return {
                         )
                     )
                 )
-        
+
                 if max_len >= cc_resolve(vim.wo.cc) then
                     return max_len
                 end
