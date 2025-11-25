@@ -5,20 +5,20 @@ return {
         lazy = false,
         priority = 1000,
         config = function()
-            vim.cmd [[colorscheme deepwhite]]
+            vim.cmd([[colorscheme deepwhite]])
         end,
     },
     {
         -- sync terminal boarder color with nvim bg
-        "typicode/bg.nvim",
-        lazy = false
+        'typicode/bg.nvim',
+        lazy = false,
     },
     {
         -- statusline
         'nvim-lualine/lualine.nvim',
         -- dependencies = { 'nvim-tree/nvim-web-devicons' }
         opts = {
-    	    options = {
+            options = {
                 icons_enabled = false,
                 component_separators = '',
                 section_separators = '',
@@ -26,7 +26,7 @@ return {
             sections = {
                 lualine_y = {},
             },
-        }
+        },
     },
     {
         -- show column line on insert mode

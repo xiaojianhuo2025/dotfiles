@@ -1,12 +1,15 @@
 return {
     {
-        'nvim-telescope/telescope.nvim', tag = 'v0.1.9',
+        'nvim-telescope/telescope.nvim',
+        tag = 'v0.1.9',
         dependencies = { 'nvim-lua/plenary.nvim' },
         keys = {
             {
-                '<leader>ff', 
-                function() require('telescope.builtin').find_files() end, 
-                mode = 'n', 
+                '<leader>ff',
+                function()
+                    require('telescope.builtin').find_files()
+                end,
+                mode = 'n',
                 desc = 'Find files',
             },
         },
@@ -20,9 +23,9 @@ return {
             {
                 '-',
                 '<CMD>Oil<CR>',
-                mode = 'n', 
+                mode = 'n',
                 desc = 'Open Parent Directory',
-            }
+            },
         },
         -- Optional dependencies
         -- dependencies = { { "nvim-mini/mini.icons", opts = {} } },
