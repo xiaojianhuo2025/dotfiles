@@ -180,3 +180,12 @@ cd dotfiles/
 ls
 git status
 ls
+nvim
+ls
+cd dotfiles/
+ls
+wezterm
+cd wezterm/
+ls
+nvim wezterm.lua
+ls

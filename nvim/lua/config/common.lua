@@ -45,4 +45,5 @@ vim.cmd.filetype('plugin indent on')
 vim.o.undodir = os.getenv('HOME') .. '/.vim/undodir'
 vim.o.undofile = true
 
-vim.o.winborder = 'single'
+-- 因为deepwhite的float window没有色差，所以加上边框
+-- vim.o.winborder = 'single'

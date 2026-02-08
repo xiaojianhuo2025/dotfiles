@@ -6,14 +6,16 @@ window-width = 90
 
 # theme = Alabaster
 # theme = Raycast Light
-theme = Bluloco Dark
+theme = Bluloco Light
+# theme = Horizon
 
 # background-opacity = 0.2
 # background-blur = true
 
-font-size = 10.5
+font-size = 10
 font-family = Fira Code
 font-family = Source Han Sans CN
+# font-family = Maple Mono NF CN
 
 mouse-hide-while-typing = true
 # adjust-cursor-thickness = 20%

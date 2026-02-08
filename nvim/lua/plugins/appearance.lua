@@ -1,11 +1,15 @@
 return {
     {
-        -- colorscheme
-        'Verf/deepwhite.nvim',
+        'uhs-robert/oasis.nvim',
         lazy = false,
         priority = 1000,
         config = function()
-            vim.cmd([[colorscheme deepwhite]])
+            require('oasis').setup({
+                light_intensity = 2,
+            }) -- (see Configuration below for all customization options)
+            vim.o.background = 'light'
+            vim.cmd.colorscheme('oasis-twilight')
+            -- After setup, apply theme (or any style like "oasis-night")
         end,
     },
     {

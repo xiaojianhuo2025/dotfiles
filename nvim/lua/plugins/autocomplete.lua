@@ -43,6 +43,7 @@ return {
                 default = { 'lsp', 'path', 'snippets', 'buffer' },
             },
 
+            signature = { enabled = true },
             -- (Default) Rust fuzzy matcher for
             fuzzy = { implementation = 'prefer_rust_with_warning' },
         },

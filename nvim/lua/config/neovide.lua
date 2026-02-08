@@ -1,5 +1,5 @@
 if vim.g.neovide then
-    vim.o.guifont = 'Fira Code:h10.5'
+    vim.o.guifont = 'Fira Code,Source Han Sans CN:h10.5'
     local padding = 4
     vim.g.neovide_padding_top = padding
     vim.g.neovide_padding_bottom = padding
