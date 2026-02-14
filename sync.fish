@@ -10,14 +10,15 @@ end
 # src：源头文件（夹），dst：符号链接位置
 function link --argument-names src dst
     # echo $src $dst
+    set --local dir (dirname $dst)
     if test -e $dst
         set --local timestamp (date +"%Y-%m-%d_%H:%M:%S")
         # echo $timestamp
-        set --local dir (dirname $dst)
         set --local filename (basename $dst)
         # echo $dir
         mv $dst "$dir/backup-$timestamp-$filename"
     end
+    mkdir -p $dir
     ln -s $src $dst
 end
 
