@@ -16,4 +16,4 @@ alias psp="gamemoderun ppsspp"
 alias ps2="gamemoderun pcsx2"
 alias ff="fastfetch -l none"
 
-thefuck --alias | source
+# thefuck --alias | source
