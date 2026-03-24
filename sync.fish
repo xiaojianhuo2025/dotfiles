@@ -28,7 +28,7 @@ function repolink --argument-names src dst
 end
 
 if test "$_" != source
-    set folders nvim ghostty fish mpv MangoHud # "wezterm" "nushell"
+    set folders nvim ghostty fish mpv MangoHud alacritty # "wezterm" "nushell"
     for folder in $folders
         dotconfig $folder
     end
@@ -36,6 +36,7 @@ if test "$_" != source
     # 暂不维护
     # repolink "vimrc" "$HOME/.vimrc"
     # repolink "gvimrc" "$HOME/.gvimrc"
+    repolink "zshrc" "$HOME/.zshrc"
     if [ $(uname) = Linux ]
         # 替换/etc里的文件需要root权限
         # 禁止ungoogled-chromium打开bitbrowser协议，

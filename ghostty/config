@@ -1,8 +1,8 @@
-window-padding-x = 6
+window-padding-x = 4
 window-padding-y = 6
 window-padding-balance = true
-window-height = 36
-window-width = 90
+window-height = 40
+window-width = 100
 
 # theme = Alabaster
 # theme = Raycast Light
@@ -23,5 +23,5 @@ mouse-hide-while-typing = true
 
 cursor-style-blink = false
 
-initial-command = fish
+# initial-command = fish
 # shell-integration = fish
