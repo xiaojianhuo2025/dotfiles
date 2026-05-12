@@ -12,10 +12,6 @@ zinit light zsh-users/zsh-syntax-highlighting
 zinit light zsh-users/zsh-autosuggestions
 zinit light zsh-users/zsh-completions
 
-
-# 路径补全时忽略大小写和下划线连字符
-zstyle ':completion:*' matcher-list 'm:{a-zA-Z}={A-Za-z}' 'r:|[._-]=* r:|=*' 'l:|=* r:|=*'
-
 # prompt
 export PROMPT='[%D{%K:%M:%S}] %~ %# '
 
@@ -50,3 +46,8 @@ if command -v bat &> /dev/null; then
 else
     echo "bat not installed"
 fi
+
+
+autoload -Uz compinit && compinit
+# 路径补全时忽略大小写和下划线连字符
+zstyle ':completion:*' matcher-list 'm:{a-zA-Z}={A-Za-z}' 'r:|[._-]=* r:|=*' 'l:|=* r:|=*'
