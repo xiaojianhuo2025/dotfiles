@@ -13,7 +13,7 @@ def link(src: str, dst: str):
     _dst = Path(dst)
     if _dst.exists(follow_symlinks=False):
         timestamp = datetime.now().strftime("%Y%m%d%H%M%S")
-        _dst.rename(_dst.parent / ("backup_" + timestamp + "_" + _dst.name))
+        _dst.rename(_dst.parent / ("backup_" + timestamp + _dst.name))
 
     _dst.parent.mkdir(parents=True, exist_ok=True)
     _dst.symlink_to(_src)
@@ -33,12 +33,13 @@ def is_root():
 
 
 if __name__ == "__main__":
-    folders = ["nvim", "ghostty", "mpv", "MangoHud"]
-    
+    folders = ["paru", "nvim", "ghostty", "mpv", "MangoHud"]
+
     for folder in folders:
         dotconfig(folder)
 
     repolink("zshrc", Path.home() / ".zshrc")
+    # 用户目录外的文件链接需要root权限才能执行
     if is_root():
         repolink("blockpolicies.json", "/etc/chromium/policies/managed/blocklist.json")
     else:
