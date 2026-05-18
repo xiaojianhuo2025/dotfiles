@@ -25,3 +25,5 @@ cursor-style-blink = false
 
 # initial-command = fish
 # shell-integration = fish
+
+notify-on-command-finish = unfocused
